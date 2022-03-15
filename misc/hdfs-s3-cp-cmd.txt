@@ -1,2 +1,3 @@
 s3-dist-cp --src=s3://akshay-yelp/yelp_academic_dataset_review_features1/ --dest=hdfs:///ML-input/
 s3-dist-cp --src=s3://akshay-yelp/yelp_academic_dataset_review.json --dest=hdfs:///NLP-json/
+s3-dist-cp --src=s3://akshay-yelp/yelp_academic_dataset_review_orc/ --dest=hdfs:///NLP-orc/
