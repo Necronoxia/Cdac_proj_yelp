@@ -1,0 +1,33 @@
+Hadoop distcp s3://ash-proj/Parquet/yelp_academic_dataset_review_featuresNLabels/*.parquet /user/
+
+
+hadoop distcp https://ash-proj.s3.amazonaws.com/Parquet/yelp_academic_dataset_review_featuresNLabels/ /root/myfile
+
+
+hadoop distcp s3://ash-proj/Parquet/yelp_academic_dataset_review_featuresNLabels/part-00000-9d74862f-f5ea-4fac-9cad-e6faf64a5565-c000.snappy.parquet /root/myfile
+
+CREATE TABLE mys3selecttable (
+col1 string,
+col2 int,
+col3 boolean
+)
+ROW FORMAT SERDE 'org.apache.hive.hcatalog.data.JsonSerDe'
+STORED AS
+INPUTFORMAT
+  'com.amazonaws.emr.s3select.hive.S3SelectableTextInputFormat'
+OUTPUTFORMAT
+  'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
+LOCATION 's3://path/to/json/'
+TBLPROPERTIES (
+  "s3select.format" = "json"
+);
+
+
+AWS_ACCESS_KEY_ID=ASIA5UQZ5O3F5HFXWNNL
+AWS_SECRET_ACCESS_KEY=5I8bYuv1rNIiF/lTd7Pu4YWgA3O3CP/Nzn/7CB3Q
+hadoop distcp -Dfs.s3.access.key="${AWS_ACCESS_KEY_ID}" -Dfs.s3.secret.key="${AWS_SECRET_ACCESS_KEY}" s3://ash-proj/Parquet/yelp_academic_dataset_review_featuresNLabels/ /user/
+
+
+AWS_ACCESS_KEY_ID=ASIA5UQZ5O3F5HFXWNNL
+AWS_SECRET_ACCESS_KEY=5I8bYuv1rNIiF/lTd7Pu4YWgA3O3CP/Nzn/7CB3Q
+hadoop distcp -Dfs.s3.access.key="${AWS_ACCESS_KEY_ID}" -Dfs.s3.secret.key="${AWS_SECRET_ACCESS_KEY}" s3://ash-proj/Parquet/yelp_academic_dataset_review_featuresNLabels/part-00000-9d74862f-f5ea-4fac-9cad-e6faf64a5565-c000.snappy.parquet /user/nlp/
