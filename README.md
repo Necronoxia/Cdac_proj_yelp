@@ -6,3 +6,6 @@ volume of data, they cannot manage to analyze all the comments and generate insi
 business. We do this by using machine learning-based natural language processing techniques to predict the rating
 and also generate the type of sentiment that is being conveyed by the text. Along with this, we provide the topic that
 is being discussed using topic modeling.
+
+## Architecture:
+![project_architechture_final  drawio](https://user-images.githubusercontent.com/41346159/162418183-584daa19-0150-4d34-a2f4-758d13827042.png)
