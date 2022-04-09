@@ -7,8 +7,22 @@ business. We do this by using machine learning-based natural language processing
 and also generate the type of sentiment that is being conveyed by the text. Along with this, we provide the topic that
 is being discussed using topic modeling.
 
+## Notebook sequence:
+Sequence of notebooks to execute for final transformed data output.
+### Rating prediction:
+1. ../pipeline/Preprocessing-pipeline-Grams.ipynb
+2. ../models/RatingClassifierNgram.ipynb
+
+### Sentiment analysis:
+1.
+2.
+
+### Topic Modelling:
+1.
+2.
+
 ## Architecture:
-![project_architechture_final  drawio](https://user-images.githubusercontent.com/41346159/162418183-584daa19-0150-4d34-a2f4-758d13827042.png)
+![project_architechture_final ](https://user-images.githubusercontent.com/41346159/162556455-45e60f22-6d07-4fce-9c30-d710542689af.png)
 
 ## Observations:
 |          Metrics            | One Vs Rest Unigram | One Vs Rest Bigram | One Vs Rest Trigram | Logistic regression |
