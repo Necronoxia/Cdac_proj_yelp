@@ -8,7 +8,7 @@ and also generate the type of sentiment that is being conveyed by the text. Alon
 is being discussed using topic modeling.
 
 ## Website:
-Visualization and presentation: https://dheerajmjadhav.github.io/Project_DBDA_web/
+Visualization and presentation: https://dheerajmjadhav.github.io/Project-DBDA-WEB/
 
 ## Notebook sequence:
 Sequence of notebooks to execute for final transformed data output.
