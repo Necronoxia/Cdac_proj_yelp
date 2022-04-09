@@ -14,12 +14,11 @@ Sequence of notebooks to execute for final transformed data output.
 2. ../models/RatingClassifierNgram.ipynb
 
 ### Sentiment analysis:
-1.
-2.
+1. ../models/positive_negative_final.ipynb
 
 ### Topic Modelling:
-1.
-2.
+1. ../Topic_Modelling.py (Demo-version)
+2. ../TOPIC MODELLING FINAL.ipynb (Full version)
 
 ## Architecture:
 ![project_architechture_final ](https://user-images.githubusercontent.com/41346159/162556455-45e60f22-6d07-4fce-9c30-d710542689af.png)
